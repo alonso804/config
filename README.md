@@ -1,8 +1,22 @@
 # config
 
-## Crear enlaces símbólicos
+Change __*alonso*__ to your user.
+
+## NeoVim
 ```shell
-$ ln -s /ruta/original nombre
+$ cd /home/alonso/.config/nvim/
+```
+
+- Add this lines to *init.vim*:
+```vim
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+```
+
+## Create symbolic links
+```shell
+$ ln -s /path/to/original name
 ```
 
 ### Vim
