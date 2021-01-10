@@ -1,3 +1,5 @@
+set nocompatible
+
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/plugin-config.vim

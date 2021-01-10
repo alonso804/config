@@ -25,7 +25,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Check syntax
-
+Plug 'sheerun/vim-polyglot'
 
 " NERDTree
 Plug 'preservim/nerdtree'
