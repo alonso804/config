@@ -37,6 +37,9 @@ let g:rainbow_conf = {
 "HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.ejs,*hbs'
 
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<c-j>"
+
 " vim fugitive
 command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
@@ -56,6 +59,7 @@ let g:coc_global_extensions = ["coc-json",
             \ "coc-clangd",
             \ "coc-python",
             \ "coc-emmet",
+            \ "coc-snippets",
             \ "coc-css",
             \ "coc-html"]
 

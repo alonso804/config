@@ -1,0 +1,31 @@
+snippet main "main.cpp"
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	$1
+	
+	return 0;
+}
+endsnippet
+
+snippet header "header file"
+#ifndef ${1}_H
+#define $1_H
+
+$2
+
+#endif //$1_H
+endsnippet
+
+snippet class "class definition"
+class ${1} {
+	$2
+
+public:
+	$1();
+
+	virtual ~$1();
+};
+endsnippet

@@ -5,8 +5,6 @@ Plug 'morhetz/gruvbox'
 
 " Status bar
 Plug 'vim-airline/vim-airline' "Barra de abajo
-"Plug 'maximbaz/lightline-ale'
-"Plug 'itchyny/lightline.vim'
 
 " IDE
 Plug 'preservim/nerdcommenter' "Commenter
@@ -24,6 +22,7 @@ Plug 'alvan/vim-closetag' "HTML
 Plug 'christoomey/vim-tmux-navigator'
 
 " Autocomplete
+Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Check syntax
@@ -33,7 +32,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 
 " Ctrl-P
 Plug 'kien/ctrlp.vim'
