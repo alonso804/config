@@ -1,0 +1,10 @@
+{
+  "diagnostic.errorSign": ">>", 
+  "diagnostic.warningSign": "--",
+  "diagnostic.enable": true,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.messageTarget": "echo",
+
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false
+}

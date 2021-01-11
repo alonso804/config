@@ -37,8 +37,28 @@ let g:rainbow_conf = {
 "HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.ejs,*hbs'
 
+" vim fugitive
+command! -bang -nargs=? -complete=dir GFiles
+  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+command! -bang -nargs=? -complete=dir Files
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+" fugitive always vertical diffing
+set diffopt+=vertical
 
 "CoC
+let g:coc_global_extensions = ["coc-json",
+            \ "coc-tsserver",
+            \ "coc-clangd",
+            \ "coc-python",
+            \ "coc-emmet",
+            \ "coc-css",
+            \ "coc-html"]
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
@@ -55,11 +75,27 @@ set updatetime=300
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+" always show the signcolumn
+"set signcolumn=yes
+
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+"nmap <silent> [g <Plug>(coc-diagnostic-prev)
+"nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+
+
+"" Formatting selected code.
+"xmap <leader>f  <Plug>(coc-format-selected)
+"nmap <leader>f  <Plug>(coc-format-selected)
+
+"augroup mygroup
+  "autocmd!
+  "" Setup formatexpr specified filetype(s).
+  "autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  "" Update signature help on jump placeholder.
+  "autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+"augroup end
+

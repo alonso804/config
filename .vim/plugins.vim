@@ -5,6 +5,8 @@ Plug 'morhetz/gruvbox'
 
 " Status bar
 Plug 'vim-airline/vim-airline' "Barra de abajo
+"Plug 'maximbaz/lightline-ale'
+"Plug 'itchyny/lightline.vim'
 
 " IDE
 Plug 'preservim/nerdcommenter' "Commenter
@@ -36,6 +38,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Ctrl-P
 Plug 'kien/ctrlp.vim'
 
+" Git
+Plug 'tpope/vim-fugitive'
 
 "Plug 'ryanoasis/vim-devicons'
 
