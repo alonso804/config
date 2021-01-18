@@ -15,6 +15,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'ap/vim-css-color'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'gko/vim-coloresque' "Colors
 
 " Typing
