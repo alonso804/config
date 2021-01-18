@@ -5,12 +5,14 @@ Plug 'morhetz/gruvbox'
 
 " Status bar
 Plug 'vim-airline/vim-airline' "Barra de abajo
+"Plug 'vim-airline/vim-airline-themes'
 
 " IDE
 Plug 'preservim/nerdcommenter' "Commenter
 Plug 'mattn/emmet-vim' "HTML autocomplete
 Plug 'luochen1990/rainbow' "Color Pairs
 Plug 'Yggdroot/indentLine'
+Plug 'ap/vim-css-color'
 " Plug 'gko/vim-coloresque' "Colors
 
 " Typing

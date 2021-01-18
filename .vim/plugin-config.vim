@@ -90,12 +90,6 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 "nmap <silent> [g <Plug>(coc-diagnostic-prev)
 "nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-
-
-"" Formatting selected code.
-"xmap <leader>f  <Plug>(coc-format-selected)
-"nmap <leader>f  <Plug>(coc-format-selected)
-
 "augroup mygroup
   "autocmd!
   "" Setup formatexpr specified filetype(s).
