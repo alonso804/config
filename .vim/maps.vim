@@ -32,6 +32,12 @@ nnoremap <C-n> :NERDTreeFind<CR>
 
 
 " +----------------------------------------+
+" |                  FZF                   |
+" +----------------------------------------+
+map <C-p> :Files<CR>
+map <Leader>ag :Ag<CR>
+
+" +----------------------------------------+
 " |                  CoC                   |
 " +----------------------------------------+
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -73,4 +79,3 @@ endfunction
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
-

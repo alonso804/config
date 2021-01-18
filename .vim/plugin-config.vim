@@ -19,8 +19,8 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 "CtrlP
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_reuse_window  = 'startify'
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_reuse_window  = 'startify'
 
 "Emmet
 let g:user_emmet_leader_key = ','
@@ -38,9 +38,12 @@ let g:rainbow_conf = {
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.ejs,*hbs'
 
 "UltiSnips
+let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
-" vim fugitive
+" vim fzf
 command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
 
@@ -49,6 +52,8 @@ command! -bang -nargs=* Ag
 
 command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 " fugitive always vertical diffing
 set diffopt+=vertical
@@ -97,4 +102,3 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
   "" Update signature help on jump placeholder.
   "autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 "augroup end
-

@@ -13,6 +13,8 @@ Plug 'mattn/emmet-vim' "HTML autocomplete
 Plug 'luochen1990/rainbow' "Color Pairs
 Plug 'Yggdroot/indentLine'
 Plug 'ap/vim-css-color'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Plug 'gko/vim-coloresque' "Colors
 
 " Typing
@@ -36,10 +38,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Ctrl-P
-Plug 'kien/ctrlp.vim'
+"Plug 'kien/ctrlp.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 "Plug 'ryanoasis/vim-devicons'
 
