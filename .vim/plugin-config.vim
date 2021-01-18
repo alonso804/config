@@ -1,3 +1,6 @@
+"Vim-visual-multi
+so ~/.vim/plugin-config/vim-visual-multi.vim
+
 "NERDTree
 so ~/.vim/plugin-config/nerd-tree.vim
 
@@ -19,5 +22,3 @@ so ~/.vim/plugin-config/coc.vim
 "Rainbow
 so ~/.vim/plugin-config/rainbow.vim
 
-"Vim-visual-multi
-so ~/.vim/plugin-config/vim-visual-multi.vim
