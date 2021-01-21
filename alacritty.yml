@@ -110,15 +110,18 @@ font:
     style: Regular
 
   bold:
-    family: monospace
+    #family: monospace
+    #family: mononoki
     style: Bold
 
   italic:
-    family: monospace
+    #family: monospace
+    #family: mononoki
     style: Italic
 
   bold_italic:
-    family: monospace
+    #family: monospace
+    #family: mononoki
     style: Bold Italic
 
   # Point size

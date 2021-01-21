@@ -34,7 +34,16 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 "nmap <silent> [g <Plug>(coc-diagnostic-prev)
 "nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-inoremap <silent><expr> <c-space> coc#refresh()
+" Kite
+"autocmd FileType python let b:coc_suggest_disable=1
+"autocmd FileType javascript let b:coc_suggest_disable=1
+"autocmd FileType scss setl iskeyword+=@-@
+
+if &filetype == "javascript" || &filetype == "python"
+  inoremap <c-space> <C-x><C-u>
+else
+  inoremap <silent><expr> <c-space> coc#refresh()
+endif
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -73,3 +82,4 @@ endfunction
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+

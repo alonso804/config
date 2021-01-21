@@ -16,6 +16,9 @@ so ~/.vim/plugin-config/fugitive.vim
 "FZF
 so ~/.vim/plugin-config/fzf.vim
 
+"Kite
+so ~/.vim/plugin-config/kite.vim
+
 "CoC
 so ~/.vim/plugin-config/coc.vim
 

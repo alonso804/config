@@ -46,7 +46,6 @@ nnoremap <silent> <C-y> 10<C-y>
 set nocompatible
 
 so ~/.vim/plugins.vim
-so ~/.vim/maps.vim
 so ~/.vim/plugin-config.vim
 
 colorscheme alt-monokai-phoenix
