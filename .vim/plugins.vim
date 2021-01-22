@@ -38,6 +38,9 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+" Live server
+Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
+
 " Ctrl-P
 "Plug 'kien/ctrlp.vim'
 
