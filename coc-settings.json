@@ -1,4 +1,5 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": ["css", "html"],
   "diagnostic.errorSign": ">>", 
   "diagnostic.warningSign": "--",
   "diagnostic.enable": true,
