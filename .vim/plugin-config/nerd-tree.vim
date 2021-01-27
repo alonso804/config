@@ -18,3 +18,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
+
+"Vim-devicons
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '

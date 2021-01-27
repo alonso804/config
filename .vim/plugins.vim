@@ -33,8 +33,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 
 " NERDTree
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree' |
+						\ Plug 'Xuyuanp/nerdtree-git-plugin' |
+						\ Plug 'ryanoasis/vim-devicons'
+
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Live server
@@ -46,8 +48,5 @@ Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-
-"Plug 'ryanoasis/vim-devicons'
-
 
 call plug#end()
