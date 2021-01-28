@@ -4,7 +4,8 @@ window:
 font:
   normal:
     #family: mononoki Nerd Font
-    family: monospace
+    family: MesloLGS NF
+    #family: monospace
     style: Regular
 
   bold:
