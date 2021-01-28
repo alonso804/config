@@ -1,10 +1,8 @@
 # config
 
-Change __*alonso*__ to your user.
-
 ## NeoVim
 ```shell
-$ cd /home/alonso/.config/nvim/
+$ cd ~/.config/nvim/
 ```
 
 - Add this lines to *init.vim*:
@@ -21,32 +19,25 @@ $ ln -s /path/to/original name
 
 ### Vim
 ```shell
-$ cd /home/alonso/
-```
-
-```shell
-$ ln -s /home/alonso/config/.vim .vim
-```
-
-```shell
-$ ln -s /home/alonso/config/.vimrc .vimrc
+$ cd
+$ ln -s ~/config/.vim .vim
+$ ln -s ~/config/.vimrc .vimrc
 ```
 
 ### Tmux
 ```shell
 $ cd /home/alonso/
-```
-
-```shell
-$ ln -s /home/alonso/config/.tmux.conf .tmux.conf
+$ ln -s ~/config/.tmux.conf .tmux.conf
 ```
 
 ### Alacritty
 ```shell
-$ cd /home/alonso/.config/alacritty/
+$ cd ~/.config/alacritty/
+$ ln -s ~/config/alacritty.yml alacritty.yml
 ```
 
+## Install Fonts and Icons
 ```shell
-$ ln -s /home/alonso/config/alacritty.yml alacritty.yml
+$ cd ~/config/Fonts/
+$ sudo mv font-you-want/ /usr/share/fonts/
 ```
-
