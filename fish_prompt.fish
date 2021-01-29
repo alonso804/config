@@ -1,4 +1,3 @@
-#
 # name: Agnoster
 # agnoster's Theme - https://gist.github.com/3712874
 # A Powerline-inspired theme for FISH
@@ -9,12 +8,11 @@
 # [Powerline-patched font](https://gist.github.com/1595572).
 
 ## Set this options in your config.fish (if you want to :])
-set -g theme_display_user yes
+# set -g theme_display_user yes
 # set -g theme_hide_hostname yes
 # set -g theme_hide_hostname no
 # set -g default_user your_normal_user
 # set -g theme_svn_prompt_enabled yes
-
 
 
 set -g current_bg NONE
@@ -71,21 +69,65 @@ set -q theme_svn_prompt_enabled; or set theme_svn_prompt_enabled no
 # ===========================
 
 set -g __fish_git_prompt_showdirtystate 'yes'
-#set -g __fish_git_prompt_char_dirtystate '±'
-set -g __fish_git_prompt_char_dirtystate "[✗]"
-set -g __fish_git_prompt_char_cleanstate "[✔]"
 
 function parse_git_dirty
   if [ $__fish_git_prompt_showdirtystate = "yes" ]
-    set -l submodule_syntax
-    set submodule_syntax "--ignore-submodules=dirty"
-    set untracked_syntax "--untracked-files=$fish_git_prompt_untracked_files"
-    set git_dirty (command git status --porcelain $submodule_syntax $untracked_syntax 2> /dev/null)
-    if [ -n "$git_dirty" ]
-        echo -n "$__fish_git_prompt_char_dirtystate"
-    else
-        echo -n "$__fish_git_prompt_char_cleanstate"
+    if not set -q __fish_git_prompt_show_informative_status
+        set -g __fish_git_prompt_show_informative_status 1
     end
+    if not set -q __fish_git_prompt_hide_untrackedfiles
+        set -g __fish_git_prompt_hide_untrackedfiles 1
+    end
+    if not set -q __fish_git_prompt_color_branch
+        set -g __fish_git_prompt_color_branch magenta --bold
+    end
+    if not set -q __fish_git_prompt_showupstream
+        set -g __fish_git_prompt_showupstream "informative"
+    end
+    if not set -q __fish_git_prompt_char_upstream_ahead
+        set -g __fish_git_prompt_char_upstream_ahead "↑"
+    end
+    if not set -q __fish_git_prompt_char_upstream_behind
+        set -g __fish_git_prompt_char_upstream_behind "↓"
+    end
+    if not set -q __fish_git_prompt_char_upstream_prefix
+        set -g __fish_git_prompt_char_upstream_prefix ""
+    end
+    if not set -q __fish_git_prompt_char_stateseparator
+        set -g __fish_git_prompt_char_stateseparator " "
+    end
+    if not set -q __fish_git_prompt_char_stagedstate
+        set -g __fish_git_prompt_char_stagedstate "●"
+    end
+    if not set -q __fish_git_prompt_char_dirtystate
+        set -g __fish_git_prompt_char_dirtystate "✚"
+    end
+    if not set -q __fish_git_prompt_char_untrackedfiles
+        set -g __fish_git_prompt_char_untrackedfiles "…"
+    end
+    if not set -q __fish_git_prompt_char_invalidstate
+        set -g __fish_git_prompt_char_invalidstate "✖"
+    end
+    if not set -q __fish_git_prompt_char_cleanstate
+        set -g __fish_git_prompt_char_cleanstate "✔"
+    end
+    if not set -q __fish_git_prompt_color_dirtystate
+        set -g __fish_git_prompt_color_dirtystate black
+    end
+    if not set -q __fish_git_prompt_color_stagedstate
+        set -g __fish_git_prompt_color_stagedstate black
+    end
+    if not set -q __fish_git_prompt_color_invalidstate
+        set -g __fish_git_prompt_color_invalidstate black
+    end
+    if not set -q __fish_git_prompt_color_untrackedfiles
+        set -g __fish_git_prompt_color_untrackedfiles black
+    end
+    if not set -q __fish_git_prompt_color_cleanstate
+        set -g __fish_git_prompt_color_cleanstate black --bold
+    end
+
+    printf '%s' (fish_git_prompt)
   end
 end
 
@@ -100,6 +142,7 @@ end
 # ===========================
 
 function prompt_segment -d "Function to draw a segment"
+  echo -n "╭─"
   set -l bg
   set -l fg
   if [ -n "$argv[1]" ]
@@ -125,8 +168,12 @@ function prompt_segment -d "Function to draw a segment"
   end
   set current_bg $argv[1]
   if [ -n "$argv[3]" ]
-    echo -n -s $argv[3] " "
+    echo -n -s $argv[3] ""
   end
+
+    set_color -b $bg
+    set_color $current_bg
+  echo -n " "
 end
 
 function prompt_finish -d "Close open segments"
@@ -234,7 +281,6 @@ function prompt_git -d "Display the current git state"
     end
     set branch_symbol \uE0A0
     set -l branch (echo $ref | sed  "s-refs/heads/-$branch_symbol -")
-    echo -n $dirty
     if [ "$dirty" != "" ]
       prompt_segment $color_git_dirty_bg $color_git_dirty_str "$branch $dirty"
     else
@@ -313,7 +359,7 @@ function fish_prompt
   prompt_finish
   echo
   set_color -o white
-  echo -n ' $ '
+  echo -n '╰─ '
   set_color normal
 end
 
