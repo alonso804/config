@@ -72,14 +72,6 @@ set -g __fish_git_prompt_showdirtystate 'yes'
 set -g __fish_git_prompt_char_dirtystate '±'
 set -g __fish_git_prompt_char_cleanstate ''
 
-set -g __fish_git_prompt_char_upstream_ahead "↑"
-set -g __fish_git_prompt_char_upstream_behind "↓"
-set -g __fish_git_prompt_char_upstream_prefix ""
-set -g __fish_git_prompt_char_stagedstate "●"
-set -g __fish_git_prompt_char_untrackedfiles "…"
-set -g __fish_git_prompt_char_invalidstate "✖"
-set -g __fish_git_prompt_char_cleanstate "✔"
-
 function parse_git_dirty
   if [ $__fish_git_prompt_showdirtystate = "yes" ]
     set -l submodule_syntax
