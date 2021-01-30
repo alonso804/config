@@ -21,3 +21,5 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 "Vim-devicons
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+
+"let g:NERDTreeGitStatusConcealBrackets = 1 
