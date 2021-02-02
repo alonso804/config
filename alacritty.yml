@@ -3,8 +3,8 @@ window:
 
 font:
   normal:
-    #family: mononoki Nerd Font
-    family: MesloLGS NF
+    family: mononoki Nerd Font
+    #family: MesloLGS NF
     #family: monospace
     style: Regular
 
