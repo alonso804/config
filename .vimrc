@@ -52,7 +52,7 @@ so ~/.vim/plugin-config.vim
 colorscheme alt-monokai-phoenix
 "colorscheme gruvbox
 "let g:gruvbox_contrast_dark = "hard"
-"highlight Normal ctermbg=NONE
+highlight Normal ctermbg=NONE
 
 "HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx,*.ejs,*hbs'
