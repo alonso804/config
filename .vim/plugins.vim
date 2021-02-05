@@ -5,7 +5,6 @@ Plug 'morhetz/gruvbox'
 
 " Status bar
 Plug 'vim-airline/vim-airline' "Barra de abajo
-"Plug 'vim-airline/vim-airline-themes'
 
 " IDE
 Plug 'preservim/nerdcommenter' "Commenter
@@ -39,12 +38,6 @@ Plug 'preservim/nerdtree' |
 						\ Plug 'ryanoasis/vim-devicons'
 
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-" Live server
-Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
-
-" Ctrl-P
-"Plug 'kien/ctrlp.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
