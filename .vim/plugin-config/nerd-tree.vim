@@ -19,7 +19,9 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 
+let g:NERDTreeGitStatusWithFlags = 1
+let g:NERDTreeIgnore = ['^node_modules$']
+
 "Vim-devicons
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
-
 "let g:NERDTreeGitStatusConcealBrackets = 1 

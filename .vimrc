@@ -8,6 +8,7 @@ set sm
 set smartindent
 set clipboard=unnamedplus
 set showcmd
+set cursorline
 set ruler
 set encoding=utf-8
 set showmatch
@@ -49,9 +50,9 @@ set nocompatible
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 
-colorscheme alt-monokai-phoenix
-"colorscheme gruvbox
-"let g:gruvbox_contrast_dark = "hard"
+"colorscheme alt-monokai-phoenix
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
 
 "HTML, JSX
