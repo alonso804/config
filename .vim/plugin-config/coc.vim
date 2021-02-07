@@ -31,14 +31,8 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-"nmap <silent> [g <Plug>(coc-diagnostic-prev)
-"nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
-"if &filetype == "javascript" || &filetype == "python"
-  "inoremap <c-space> <C-x><C-u>
-"else
-  "inoremap <silent><expr> <c-space> coc#refresh()
-"endif
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
