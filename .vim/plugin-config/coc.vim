@@ -24,7 +24,7 @@ set updatetime=300
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
 
-" always show the signcolumn
+" Always show the signcolumn
 "set signcolumn=yes
 
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
