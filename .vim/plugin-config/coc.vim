@@ -1,6 +1,5 @@
 let g:coc_global_extensions = ["coc-json",
             \ "coc-tsserver",
-            \ "coc-deno",
             \ "coc-clangd",
             \ "coc-python",
             \ "coc-emmet",
