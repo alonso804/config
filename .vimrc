@@ -15,6 +15,7 @@ set showmatch
 set shiftwidth=2
 set tabstop=2
 set laststatus=2
+set nrformats+=alpha "To incrise letters in visual-mode
 "set mouse=a
 "set conceallevel=3
 
@@ -37,8 +38,11 @@ nmap <Leader>q :q<CR>
 nmap <Leader>x :x<CR>
 
 nmap <Leader>e :e<CR>
+
+" Run
 nmap <Leader>rj :!node %<CR>
 nmap <Leader>rt :!ts-node %<CR>
+nmap <Leader>ct :!tsc %<CR>
 
 "Change selected word
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
