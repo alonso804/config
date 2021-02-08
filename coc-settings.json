@@ -1,6 +1,14 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "html", "javascript"],
-  "diagnostic.errorSign": ">>", 
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "javascript",
+    "typescript",
+    "json",
+    "yaml",
+    "python"
+  ],
+  "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "--",
   "diagnostic.enable": true,
   "diagnostic.checkCurrentLine": true,
