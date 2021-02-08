@@ -4,6 +4,8 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeQuitOnOpen=1
 autocmd FileType nerdtree setlocal relativenumber
 let NERDTreeShowHidden=1 "Can use shift + i
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 "NERDTree-git-plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
