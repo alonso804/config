@@ -37,7 +37,8 @@ nmap <Leader>q :q<CR>
 nmap <Leader>x :x<CR>
 
 nmap <Leader>e :e<CR>
-nmap <Leader>r :!node %<CR>
+nmap <Leader>rj :!node %<CR>
+nmap <Leader>rt :!ts-node %<CR>
 
 "Change selected word
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
