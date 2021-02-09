@@ -30,7 +30,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Check syntax
+" Syntax
 Plug 'sheerun/vim-polyglot'
 
 " NERDTree
