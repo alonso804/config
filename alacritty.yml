@@ -29,37 +29,37 @@ font:
 #Gruvbox
 colors:
   primary:
-    background: '#1D2021'
-    foreground: '#dfbf8e'
+    background: "#1D2021"
+    foreground: "#dfbf8e"
 
   normal:
-    black:   '#1d1f21'
-    red:     '#ea6962'
-    green:   '#a9b665'
-    yellow:  '#e78a4e'
-    blue:    '#84bdb0'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
+    black: "#1d1f21"
+    red: "#ea6962"
+    green: "#a9b665"
+    yellow: "#e78a4e"
+    blue: "#84bdb0"
+    magenta: "0xd3869b"
+    cyan: "0x89b482"
+    white: "0xdfbf8e"
 
   bright:
-    black:   '0x928374'
-    red:     '0xea6962'
-    green:   '0xa9b665'
-    yellow:  '0xe3a84e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
+    black: "0x928374"
+    red: "0xea6962"
+    green: "0xa9b665"
+    yellow: "0xe3a84e"
+    blue: "0x7daea3"
+    magenta: "0xd3869b"
+    cyan: "0x89b482"
+    white: "0xdfbf8e"
 
   dim:
-    black:   '#131415'
-    red:     '#864343'
-    green:   '#777c44'
-    yellow:  '#9e824c'
-    blue:    '#556a7d'
-    magenta: '#75617b'
-    cyan:    '#5b7d78'
-    white:   '#828482'
+    black: "#131415"
+    red: "#864343"
+    green: "#777c44"
+    yellow: "#9e824c"
+    blue: "#556a7d"
+    magenta: "#75617b"
+    cyan: "#5b7d78"
+    white: "#828482"
 
 background_opacity: 1
