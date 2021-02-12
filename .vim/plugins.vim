@@ -32,6 +32,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
+Plug 'ianks/vim-tsx'
 
 " NERDTree
 Plug 'preservim/nerdtree' |
