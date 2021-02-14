@@ -59,6 +59,9 @@ nnoremap <silent> <C-y> 10<C-y>
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
 nnoremap <silent><leader>2 :source ~/.vimrc \| :PlugClean<CR>
 
+" To refresh
+nnoremap <silent><leader>rf :so $MYVIMRC<CR>
+
 set nocompatible
 
 so ~/.vim/plugins.vim
@@ -67,7 +70,6 @@ so ~/.vim/plugin-config.vim
 "colorscheme alt-monokai-phoenix
 let g:gruvbox_contrast_dark = "hard"
 let g:gruvbox_invert_selection='0'
-"set background=dark
 colorscheme gruvbox
 highlight Normal ctermbg=NONE
 
