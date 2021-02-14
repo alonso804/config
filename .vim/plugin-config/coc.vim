@@ -1,5 +1,7 @@
 let g:coc_global_extensions = ["coc-json",
             \ "coc-tsserver",
+            \ "coc-tslint-plugin",
+            \ "coc-styled-components",
             \ "coc-clangd",
             \ "coc-python",
             \ "coc-emmet",
@@ -19,7 +21,8 @@ set nowritebackup
 set cmdheight=1
 
 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
+"set updatetime=300
+set updatetime=50
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -76,3 +79,45 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+" Explorer
+let g:coc_explorer_global_presets = {
+\   '.vim': {
+\     'root-uri': '~/config/.vimrc',
+\   },
+\   'tab': {
+\     'position': 'tab',
+\     'quit-on-open': v:true,
+\   },
+\   'floating': {
+\     'position': 'floating',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingTop': {
+\     'position': 'floating',
+\     'floating-position': 'center-top',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingLeftside': {
+\     'position': 'floating',
+\     'floating-position': 'left-center',
+\     'floating-width': 50,
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'floatingRightside': {
+\     'position': 'floating',
+\     'floating-position': 'right-center',
+\     'floating-width': 50,
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\   'simplify': {
+\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   }
+\ }
+
+nmap <C-n> :CocCommand explorer<CR>
+"nmap <space>f :CocCommand explorer --preset floating<CR>
+"autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
+let g:indentLine_fileTypeExclude = ['coc-explorer']
+autocmd FileType coc-explorer setlocal relativenumber
+autocmd User CocNvimInit :CocCommand explorer

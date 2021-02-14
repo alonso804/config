@@ -29,7 +29,8 @@ font:
 #Gruvbox
 colors:
   primary:
-    background: "#1D2021"
+    #background: "#1D2021"
+    background: "#1C1C1C"
     foreground: "#dfbf8e"
 
   normal:

@@ -35,9 +35,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ianks/vim-tsx'
 
 " NERDTree
-Plug 'preservim/nerdtree' |
-						\ Plug 'Xuyuanp/nerdtree-git-plugin' |
-						\ Plug 'ryanoasis/vim-devicons'
+"Plug 'preservim/nerdtree' |
+						"\ Plug 'Xuyuanp/nerdtree-git-plugin' |
+						"\ Plug 'ryanoasis/vim-devicons'
 
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 

@@ -2,7 +2,7 @@
 so ~/.vim/plugin-config/vim-visual-multi.vim
 
 "NERDTree
-so ~/.vim/plugin-config/nerd-tree.vim
+"so ~/.vim/plugin-config/nerd-tree.vim
 
 "Emmet
 so ~/.vim/plugin-config/emmet.vim
