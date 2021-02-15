@@ -56,8 +56,8 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 nnoremap <silent> <C-e> 10<C-e>
 nnoremap <silent> <C-y> 10<C-y>
 
-nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
-nnoremap <silent><leader>2 :source ~/.vimrc \| :PlugClean<CR>
+nnoremap <silent><leader>1 :so $MYVIMRC \| :PlugInstall<CR>
+nnoremap <silent><leader>2 :so $MYVIMRC \| :PlugClean<CR>
 
 " To refresh
 nnoremap <silent><leader>rf :so $MYVIMRC<CR>
