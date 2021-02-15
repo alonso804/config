@@ -17,7 +17,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'mhinz/vim-signify'
-Plug 'tc50cal/vim-terminal' " Terminal
 
 " Typing
 Plug 'tpope/vim-surround' "Helpful for pairs
