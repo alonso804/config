@@ -23,20 +23,19 @@
   },
 
   "explorer.width": 30,
-    "explorer.icon.enableNerdfont": true,
-    "explorer.quitOnOpen": true,
-    "explorer.file.showHiddenFiles": true,
-    "explorer.previewAction.onHover": false,
-    "explorer.keyMappings.global": {
-      /*"<cr>": ["expandable?", "expand", "open"],*/
-      "v": "open:vsplit",
-      "s": "open:vsplit",
-      "mm": "rename",
-      "mc": "copyFile",
-      "C": "copyFile",
-      "md": "delete",
-      "D": "delete",
-      "ma": "addFile",
-      "mA": "addDirectory"
-    }
+  "explorer.icon.enableNerdfont": true,
+  "explorer.quitOnOpen": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "v": "open:vsplit",
+    "s": "open:split",
+    "mm": "rename",
+    "mc": "copyFile",
+    "C": "copyFile",
+    "md": "delete",
+    "D": "delete",
+    "ma": "addFile",
+    "mA": "addDirectory"
+  }
 }
