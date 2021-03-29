@@ -5,7 +5,7 @@
     "javascript",
     "json",
     "yaml",
-    "python"
+    /*"python"*/
   ],
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "--",
