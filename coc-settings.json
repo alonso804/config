@@ -5,8 +5,10 @@
     "javascript",
     "json",
     "yaml",
-    /*"python"*/
+    "python"
   ],
+  "javascript.suggestionActions.enabled": false,
+
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "--",
   "diagnostic.enable": true,
