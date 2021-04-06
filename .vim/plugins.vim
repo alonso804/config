@@ -38,8 +38,7 @@ Plug 'ianks/vim-tsx'
 "Plug 'preservim/nerdtree' |
 						"\ Plug 'Xuyuanp/nerdtree-git-plugin' |
 						"\ Plug 'ryanoasis/vim-devicons'
-
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Git
 Plug 'tpope/vim-fugitive'
