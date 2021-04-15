@@ -3,28 +3,28 @@ window:
 
 font:
   normal:
-    family: mononoki Nerd Font
-    #family: Lilex
+    #family: mononoki Nerd Font
+    family: Lilex
     #family: MesloLGS NF
     #family: monospace
     style: Regular
 
   bold:
     #family: monospace
-    family: mononoki Nerd Font
-    #family: Lilex
+    #family: mononoki Nerd Font
+    family: Lilex
     style: Bold
 
   italic:
     #family: monospace
-    family: mononoki Nerd Font
-    #family: Lilex
+    #family: mononoki Nerd Font
+    family: Lilex
     style: Italic
 
   bold_italic:
     #family: monospace
-    family: mononoki Nerd Font
-    #family: Lilex
+    #family: mononoki Nerd Font
+    family: Lilex
     style: Bold Italic
 
   # Point size
