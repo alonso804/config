@@ -16,10 +16,9 @@ set shiftwidth=2
 set tabstop=2
 set laststatus=2
 set nrformats+=alpha "To incrise letters in visual-mode
-"set belloff+=ctrlg
-"set novisualbell
+set novisualbell
+set noerrorbells
 "set mouse=a
-"set conceallevel=3
 
 let mapleader=" "
 

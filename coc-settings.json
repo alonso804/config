@@ -3,11 +3,14 @@
     "css",
     "html",
     "javascript",
+    "typescript",
+    "typescriptreact",
     "json",
     "yaml",
     "python"
   ],
   "javascript.suggestionActions.enabled": false,
+  "diagnostic.displayByAle": true,
 
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "--",

@@ -1,3 +1,6 @@
+"CoC
+so ~/.vim/plugin-config/ale.vim
+
 "Vim-visual-multi
 so ~/.vim/plugin-config/vim-visual-multi.vim
 
