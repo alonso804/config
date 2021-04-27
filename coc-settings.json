@@ -10,7 +10,6 @@
     "python"
   ],
   "javascript.suggestionActions.enabled": false,
-  "diagnostic.displayByAle": true,
 
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "--",

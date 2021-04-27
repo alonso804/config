@@ -17,7 +17,7 @@ set tabstop=2
 set laststatus=2
 set nrformats+=alpha "To incrise letters in visual-mode
 set novisualbell
-set noerrorbells
+"set noerrorbells
 "set mouse=a
 
 let mapleader=" "
