@@ -2,6 +2,9 @@
 "so ~/.vim/plugin-config/ale.vim
 
 "Vim-visual-multi
+so ~/.vim/plugin-config/tagbar.vim
+
+"Vim-visual-multi
 so ~/.vim/plugin-config/vim-visual-multi.vim
 
 "NERDTree

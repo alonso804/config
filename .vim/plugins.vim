@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline' "Barra de abajo
 
 " IDE
 Plug 'preservim/nerdcommenter' "Commenter
+Plug 'preservim/tagbar'
 Plug 'mattn/emmet-vim' "HTML autocomplete
 Plug 'luochen1990/rainbow' "Color Pairs
 Plug 'Yggdroot/indentLine'
