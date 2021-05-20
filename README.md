@@ -24,9 +24,15 @@ $ ln -s ~/config/.vim .vim
 $ ln -s ~/config/.vimrc .vimrc
 ```
 
+### CoC-Settings
+```shell
+$ cd .config/nvim/
+$ ln -s ~/config/coc-settings.json coc-settings.json
+```
+
 ### Tmux
 ```shell
-$ cd /home/alonso/
+$ cd
 $ ln -s ~/config/.tmux.conf .tmux.conf
 ```
 
