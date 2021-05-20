@@ -1,3 +1,5 @@
+" let g:coc_node_path = "/home/alonso/.nvm/versions/node/vxx.xx.x/bin/node"
+
 let g:coc_global_extensions = ["coc-json",
             \ "coc-tsserver",
             \ "coc-tslint-plugin",
