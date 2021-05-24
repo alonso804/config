@@ -17,6 +17,7 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.messageTarget": "echo",
 
+  "python.jediEnabled": false,
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,
 
