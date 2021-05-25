@@ -19,3 +19,8 @@ sudo apt install silversearcher-ag
 ```sh
 sudo apt  install exuberant-ctags
 ```
+
+## clangd
+```sh
+sudo apt  install clangd
+```
