@@ -7,7 +7,7 @@ nvm install <version>
 
 Variables in fish
 ```fish
-set PATH /home/user/.nvm/versions/node/v14.17.0/bin $PATH
+set PATH /home/user/.nvm/versions/node/<version>/bin $PATH
 ```
 
 ## ag
