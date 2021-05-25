@@ -1,8 +1,8 @@
 # config
 
 ## NeoVim
-```shell
-$ cd ~/.config/nvim/
+```sh
+cd ~/.config/nvim/
 ```
 
 - Add this lines to *init.vim*:
@@ -13,37 +13,37 @@ source ~/.vimrc
 ```
 
 ## Create symbolic links
-```shell
-$ ln -s /path/to/original name
+```sh
+ln -s /path/to/original name
 ```
 
 ### Vim
-```shell
-$ cd
-$ ln -s ~/config/.vim .vim
-$ ln -s ~/config/.vimrc .vimrc
+```sh
+cd
+ln -s ~/config/.vim .vim
+ln -s ~/config/.vimrc .vimrc
 ```
 
 ### CoC-Settings
-```shell
-$ cd .config/nvim/
-$ ln -s ~/config/coc-settings.json coc-settings.json
+```sh
+cd .config/nvim/
+ln -s ~/config/coc-settings.json coc-settings.json
 ```
 
 ### Tmux
-```shell
-$ cd
-$ ln -s ~/config/.tmux.conf .tmux.conf
+```sh
+cd
+ln -s ~/config/.tmux.conf .tmux.conf
 ```
 
 ### Alacritty
-```shell
-$ cd ~/.config/alacritty/
-$ ln -s ~/config/alacritty.yml alacritty.yml
+```sh
+cd ~/.config/alacritty/
+ln -s ~/config/alacritty.yml alacritty.yml
 ```
 
 ## Install Fonts and Icons
-```shell
-$ cd ~/config/Fonts/
-$ sudo mv font-you-want/ /usr/share/fonts/
+```sh
+cd ~/config/Fonts/
+sudo mv font-you-want/ /usr/share/fonts/
 ```
