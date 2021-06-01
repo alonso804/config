@@ -10,6 +10,19 @@ Variables in fish
 set PATH /home/user/.nvm/versions/node/<version>/bin $PATH
 ```
 
+## Go 
+[Go Download](https://golang.org/dl/)
+
+Variables in fish
+```fish
+set PATH /usr/local/go/bin $PATH
+```
+
+## Gopls 
+```sh
+GO111MODULE=on go get golang.org/x/tools/gopls@latest
+```
+
 ## ag
 ```sh
 sudo apt install silversearcher-ag
