@@ -30,10 +30,27 @@ sudo apt install silversearcher-ag
 
 ## ctags
 ```sh
-sudo apt  install exuberant-ctags
+sudo apt install exuberant-ctags
 ```
 
 ## clangd
 ```sh
 sudo apt  install clangd
+```
+
+## bat
+[bat](https://github.com/sharkdp/bat)
+
+
+## lsd
+[lsd](https://github.com/Peltoche/lsd)
+
+
+## fzf
+[fzf](https://github.com/junegunn/fzf)
+
+
+## ranger
+```sh
+sudo apt install ranger
 ```
