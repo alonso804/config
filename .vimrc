@@ -32,6 +32,8 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+imap <C-k> <Esc>
+
 nmap <F3> :noh<CR>
 
 nmap <Leader>w :w<CR>
