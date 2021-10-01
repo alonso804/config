@@ -30,6 +30,7 @@ font:
   # Point size
   #size: 17.0
   #size: 8.3
+  #size: 13
   size: 12
 
 #Gruvbox
