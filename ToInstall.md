@@ -1,6 +1,7 @@
 ## NodeJS 
+[Github](https://github.com/nvm-sh/nvm#installing-and-updating)
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/<nvm_version>/install.sh | bash
 nvm ls-remote 
 nvm install <version>
 ```
@@ -59,3 +60,10 @@ sudo apt  install clangd
 ```sh
 sudo apt install ranger
 ```
+
+## Mongodb
+[mongodb](https://docs.mongodb.com/manual/installation/)
+
+[mongodb ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+
+[mongodb wsl ubuntu](https://docs.microsoft.com/windows/wsl/tutorials/wsl-database#install-mongodb)
