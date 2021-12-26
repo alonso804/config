@@ -10,6 +10,11 @@ Variables in fish
 set PATH /home/user/.nvm/versions/node/<version>/bin $PATH
 ```
 
+## Yarn
+```sh
+npm install --global yarn
+```
+
 ## Go 
 [Go Download](https://golang.org/dl/)
 
