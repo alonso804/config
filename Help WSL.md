@@ -7,3 +7,6 @@ explorer.exe .
 ```sh
 clip.exe
 ```
+
+## win32yank
+https://github.com/equalsraf/win32yank/releases
