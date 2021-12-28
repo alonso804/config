@@ -12,12 +12,12 @@ set clipboard=unnamedplus
 "let g:clipboard = {
 "          \   'name': 'clip-wsl',
 "					\   'copy': {
-"          \      '+': '/mnt/c/Users/Lenovo/win32yank.exe -i --crlf',
-"          \      '*': '/mnt/c/Users/Lenovo/win32yank.exe -i --crlf',
+"          \      '+': '/path/to/win32yank.exe -i --crlf',
+"          \      '*': '/path/to/win32yank.exe -i --crlf',
 "          \   },
 "			    \   'paste': {
-"          \      '+': '/mnt/c/Users/Lenovo/win32yank.exe -o --lf',
-"          \      '*': '/mnt/c/Users/Lenovo/win32yank.exe -o --lf',
+"          \      '+': '/path/to/win32yank.exe -o --lf',
+"          \      '*': '/path/to/win32yank.exe -o --lf',
 "          \   },
 "          \   'cache_enabled': 0,
 "          \ }
