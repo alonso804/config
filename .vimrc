@@ -8,7 +8,7 @@ set sm
 set smartindent
 set clipboard=unnamedplus
 
-"set clipboard=unnamedplus
+"set clipboard+=unnamedplus
 "let g:clipboard = {
 "          \   'name': 'clip-wsl',
 "					\   'copy': {
