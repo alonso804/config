@@ -10,6 +10,9 @@
     "python"
   ],
   "javascript.suggestionActions.enabled": false,
+  
+  "clangd.checkUpdates": true,
+  "clangd.fallbackFlags": ["-std=c++17"],
 
   "diagnostic.errorSign": ">>",
   "diagnostic.warningSign": "--",
