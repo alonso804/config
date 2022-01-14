@@ -29,5 +29,11 @@
     "key": "ctrl+shift+n",
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
+  },
+  {
+    "key": "shift+alt+A", // trigger the macro with whatever keybinding if you wish
+    "command": "extension.multiCommand.execute",
+    "args": { "command": "multiCommand.BlockCommentOff" },
+    "when": "editorTextFocus && !editorHasSelection"
   }
 ]
