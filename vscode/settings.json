@@ -62,5 +62,33 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.fontSize": 13,
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dobri Next -C05- Electron",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum', 'calt', 'ss01'",
+  "editor.lineNumbers": "relative",
+  "selectby.regexes": {
+    "BlockCommentSelect": {
+      "backward": "/\\*",
+      "forward": "\\*/",
+      "forwardInclude": true,
+      "backwardInclude": true,
+      "showSelection": true
+    }
+  },
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.BlockCommentOff",
+      "sequence": [
+        {
+          "command": "selectby.regex",
+          "args": ["BlockCommentSelect"]
+        },
+        "editor.action.blockComment"
+      ]
+    }
+  ],
 }
