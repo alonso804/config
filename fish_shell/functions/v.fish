@@ -1,4 +1,7 @@
-# Defined in /home/alonso/.config/fish/functions/v.fish @ line 1
 function v --wraps='nvim .'
-  nvim $argv
+  if count $argv > /dev/null
+    nvim $argv
+  else
+    nvim .
+  end
 end
