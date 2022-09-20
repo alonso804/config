@@ -1,0 +1,1 @@
+alias yd "yarn dev"
