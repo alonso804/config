@@ -112,3 +112,5 @@ v () {
 }
 alias yd='yarn dev'
 alias yt='yarn test'
+alias py='python'
+
